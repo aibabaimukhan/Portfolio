@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табы с Изображениями</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-headers">
+            <button class="tab-link active" onclick="openTab(event, 'tab1')">Достижения</button>
+            <button class="tab-link" onclick="openTab(event, 'tab2')">Сертификаты курсов</button>
+            <button class="tab-link" onclick="openTab(event, 'tab3')">Документы</button>
+            <button class="tab-link" onclick="openTab(event, 'tab4')">Публикации</button>
+            <button class="tab-link" onclick="openTab(event, 'tab4')">Дополнительные документы</button>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <h3>Достижения</h3>
+                <div>
+                    <img src="Достижение/001 - нужно распечатать.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/0616cf18-6d65-450c-9c3b-2a50bfb93a9c.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/20240604_103444.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/20240613_075331.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/bc9f60fb-bce9-439a-867c-0940fcad1431.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/БП.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/Грамота Студента.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Достижение/20240604_103338.jpg" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <h3>Сертификаты курсов</h3>
+                <div>
+                    <img src="Курсы/Касипкор.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Курсы/Семинар.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Курсы/Сертификат 2.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Курсы/Сертификат.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Курсы/pdf.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                </div>
+            </div>
+            <div id="tab3" class="tab-pane">
+                <h3>Документы</h3>
+                <div>
+                    <img src="Документы/Диплом.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Документы/Трудовая.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    <img src="Документы/Удостоверение.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                </div>
+            </div>
+            <div id="tab4" class="tab-pane">
+                <h3>Публикации</h3>
+                <div>
+                    <img src="Публикация/Публикация.png" alt="Изображение 1" class="tab-image" onclick="openImageModal(this)">
+                    
+                </div>
+            </div>
+            <div id="tab5" class="tab-pane">
+                <h3>Дополнительные документы</h3>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <a id="downloadBtn" class="download-btn" href="" download>Скачать</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
